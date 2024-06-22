@@ -12,7 +12,7 @@ const mesesDelAño = [
 function actualizarDato () {
   const dato = new Date();
   const year = dato.getFullYear();
-  let mes = dato.getMonth() + 1;
+  let mes = dato.getMonth();
   mes = mesesDelAño[mes];
   
   const fecha = String(dato.getDate()).padStart(2, '0');
